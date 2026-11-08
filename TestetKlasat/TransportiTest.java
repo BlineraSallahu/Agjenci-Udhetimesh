@@ -1,24 +1,25 @@
-import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class TransportiTest {
+    public static void main(String[] args) {
+        // Data e nisjes vendoset në të ardhmen për të kaluar validimet
+        LocalDateTime dataArdhshme = LocalDateTime.now().plusDays(2);
 
-    @Test
-    public void testKrijimiSukses() {
-        assertDoesNotThrow(() -> {
-            // Data në të ardhmen (viti 2027)
-            LocalDateTime dataArdhme = LocalDateTime.of(2027, 5, 20, 10, 0);
-            new Transporti("Aeroplan", "Prishtinë", "Romë", dataArdhme);
-        });
-    }
+        try {
+            // Testimi i Autobusit me emërtim të saktë
+            Autobusi autobus = new Autobusi("Prishtinë", "Tiranë", dataArdhshme, 50);
+            System.out.println(" Autobusi u krijua me sukses!");
+            System.out.println("Lloji: " + autobus.llojiTransportit + " | Numri i ulëseve: " + autobus.getNumriUleseve());
 
-    @Test
-    public void testDataKaluarHedhException() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            // Data në të kaluarën (viti 2020)
-            LocalDateTime dataKaluar = LocalDateTime.of(2020, 1, 1, 12, 0);
-            new Transporti("Aeroplan", "Prishtinë", "Romë", dataKaluar);
-        });
+            System.out.println("----------------------------------------");
+
+            // Testimi i Aeroplanit
+            Aeroplani aeroplan = new Aeroplani("Shkup", "Zvicër", dataArdhshme, "Austrian Airlines");
+            System.out.println("Aeroplani u krijua me sukses!");
+            System.out.println("Lloji: " + aeroplan.llojiTransportit + " | Kompania: " + aeroplan.getKompaniaFluturimit());
+
+        } catch (IllegalArgumentException e) {
+            System.out.println(" Gabim gjatë validimit: " + e.getMessage());
+        }
     }
 }

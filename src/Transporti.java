@@ -2,10 +2,10 @@ import java.time.LocalDateTime;
 
 public class Transporti {
     // Atributet për menaxhimin e udhetimit fizik
-    private String llojiTransportit; // p.sh., "Aeroplan", "Autobus"
-    private String nisja;
-    private String destinacioni;
-    private LocalDateTime orariNisjes; // Data dhe ora e nisjes
+    protected String llojiTransportit; // p.sh., "Aeroplan", "Autobus"
+    protected String nisja;
+    protected String destinacioni;
+    protected LocalDateTime orariNisjes; // Data dhe ora e nisjes
 
     public Transporti(String llojiTransportit, String nisja, String destinacioni, LocalDateTime orariNisjes) {
         // Validimi i rruges dhe llojit te mjetit te transportit
