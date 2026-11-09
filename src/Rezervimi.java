@@ -1,13 +1,14 @@
 import java.time.LocalDateTime;
 
 public class Rezervimi {
-    private String idRezervimi;
-    private LocalDateTime dataRezervimit;
-    private String statusi;
+    // Atributet e bëra 'protected' që të mund të qasen nga nënklasat
+    protected String idRezervimi;
+    protected LocalDateTime dataRezervimit;
+    protected String statusi;
 
     // Nderlidhja e objekteve sipas kartës CRC
-    private Klienti klienti;
-    private Udhetimi udhetimi;
+    protected Klienti klienti;
+    protected Udhetimi udhetimi;
 
     public Rezervimi(String idRezervimi, Klienti klienti, Udhetimi udhetimi, String statusi) {
         if (idRezervimi == null || idRezervimi.trim().isEmpty()) throw new IllegalArgumentException("ID nuk mund te jete e zbrazet.");
@@ -23,4 +24,11 @@ public class Rezervimi {
         // Regjistrimi automatik i kohes aktuale kur krijohet objekti
         this.dataRezervimit = LocalDateTime.now();
     }
+
+    // Metodat Getter (të dobishme për leximin e të dhënave)
+    public String getIdRezervimi() { return idRezervimi; }
+    public LocalDateTime getDataRezervimit() { return dataRezervimit; }
+    public String getStatusi() { return statusi; }
+    public Klienti getKlienti() { return klienti; }
+    public Udhetimi getUdhetimi() { return udhetimi; }
 }

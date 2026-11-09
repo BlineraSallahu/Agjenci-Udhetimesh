@@ -1,15 +1,16 @@
 import java.time.LocalDate;
 
 public class Udhetimi {
-    private String idUdhetimi;
-    private String destinacioni;
-    private LocalDate dataNisjes;
-    private double cmimi;
-    private int maxPersona;
+    // Atributet e bëra 'protected' që të mund të lexohen nga nënklasat
+    protected String idUdhetimi;
+    protected String destinacioni;
+    protected LocalDate dataNisjes;
+    protected double cmimi;
+    protected int maxPersona;
 
     // Agregimi: Lidhja me klasat e tjera bashkepunetore (Collaborators)
-    private Hoteli hoteli;
-    private Transporti transporti;
+    protected Hoteli hoteli;
+    protected Transporti transporti;
 
     public Udhetimi(String idUdhetimi, String destinacioni, LocalDate dataNisjes, double cmimi, int maxPersona, Hoteli hoteli, Transporti transporti) {
         if (idUdhetimi == null || idUdhetimi.trim().isEmpty()) throw new IllegalArgumentException("ID nuk mund te jete e zbrazet.");
@@ -20,7 +21,7 @@ public class Udhetimi {
 
         // Validimi i vlerave numerike (duhet te jene pozitive)
         if (cmimi <= 0) throw new IllegalArgumentException("Çmimi duhet te jete mbi 0.");
-        if (maxPersona <= 0) throw new IllegalArgumentException("Numri i personave duhet t jetë mbi 0.");
+        if (maxPersona <= 0) throw new IllegalArgumentException("Numri i personave duhet të jetë mbi 0.");
 
         // Sigurohemi qe objektet e lidhura ekzistojnë
         if (hoteli == null) throw new IllegalArgumentException("Duhet te caktohet nje hotel.");
@@ -34,5 +35,13 @@ public class Udhetimi {
         this.hoteli = hoteli;
         this.transporti = transporti;
     }
-}
 
+    // Metodat Getter (opsionale por të dobishme për leximin e të dhënave nga jashtë)
+    public String getIdUdhetimi() { return idUdhetimi; }
+    public String getDestinacioni() { return destinacioni; }
+    public LocalDate getDataNisjes() { return dataNisjes; }
+    public double getCmimi() { return cmimi; }
+    public int getMaxPersona() { return maxPersona; }
+    public Hoteli getHoteli() { return hoteli; }
+    public Transporti getTransporti() { return transporti; }
+}
