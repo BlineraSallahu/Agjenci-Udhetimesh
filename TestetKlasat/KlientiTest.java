@@ -26,6 +26,29 @@ public class KlientiTest {
             new Klienti("K1", "", "Fisteku", "filan@email.com");
         });
     }
+    @Test
+    public void testKrijimiKlientitVIP() {
+        assertDoesNotThrow(() -> {
+            new KlientiVIP(
+                    "K2",
+                    "Arta",
+                    "Berisha",
+                    "arta@email.com"
+            );
+        });
+    }
+
+    @Test
+    public void testKrijimiKlientitStandard() {
+        assertDoesNotThrow(() -> {
+            new KlientiStandard(
+                    "K3",
+                    "Blerim",
+                    "Krasniqi",
+                    "blerim@email.com"
+            );
+        });
+    }
 }
 
 

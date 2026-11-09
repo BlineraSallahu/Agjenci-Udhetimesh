@@ -16,4 +16,17 @@ public class PuntoriTest {
             new Puntori("P1", "Kron", "   ");
         });
     }
+    @Test
+    public void testKrijimiPuntoritAdministrativ() {
+        assertDoesNotThrow(() -> {
+            new PuntoriAdministrativ("P2", "Arta", "Administratore");
+        });
+    }
+
+    @Test
+    public void testKrijimiPuntoritShitjes() {
+        assertDoesNotThrow(() -> {
+            new PuntoriShitjes("P3", "Blerim", "Agjent i shitjes");
+        });
+    }
 }
