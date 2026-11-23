@@ -17,5 +17,12 @@ public class UdhetimiVendor extends Udhetimi {
         this.rajoni = rajoni;
     }
 
-    public String getRajoni() { return rajoni; }
+    @Override
+    public double llogaritCmiminTotal() {
+        return cmimi;
+    }
+
+    public String getRajoni() {
+        return rajoni;
+    }
 }

@@ -1,6 +1,8 @@
+
 import agjencia.hotelet.Hoteli;
 import agjencia.transportet.Transporti;
 import agjencia.udhetimet.Udhetimi;
+import agjencia.udhetimet.UdhetimiNderkombetar;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,7 +16,10 @@ public class UdhetimiTest {
         Transporti t = new Transporti("Fluturim", "Prishtine", "Gjeneve", LocalDateTime.now().plusDays(1));
 
         // Përdorim datë në vitin 2027 që të jetë gjithmonë në të ardhmen
-        Udhetimi u = new Udhetimi("U2", "Gjeneve", LocalDate.of(2027, 6, 10), 380.0, 3, h, t);
+        Udhetimi u = new UdhetimiNderkombetar(
+                "U2", "Gjeneve", LocalDate.of(2027, 6, 10),
+                380.0, 3, h, t, "Zvicer", false
+        );
 
         assertNotNull(u);
         assertEquals("Gjeneve", u.getDestinacioni());
@@ -26,7 +31,10 @@ public class UdhetimiTest {
         Transporti t = new Transporti("Autobus", "Prishtine", "Tirane", LocalDateTime.now().plusDays(1));
 
         // Përdorim datë në vitin 2027 që të jetë gjithmonë në të ardhmen
-        Udhetimi u = new Udhetimi("U3", "Tirane", LocalDate.of(2027, 7, 1), 200.0, 5, h, t);
+        Udhetimi u = new UdhetimiNderkombetar(
+                "U3", "Tirane", LocalDate.of(2027, 7, 1),
+                200.0, 5, h, t, "Shqiperi", false
+        );
 
         assertNotNull(u.getHoteli());
         assertNotNull(u.getTransporti());

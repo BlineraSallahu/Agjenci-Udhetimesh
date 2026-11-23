@@ -19,6 +19,16 @@ public class UdhetimiNderkombetar extends Udhetimi {
         this.kerkohetViza = kerkohetViza;
     }
 
-    public String getShtetiDestinacion() { return shtetiDestinacion; }
-    public boolean isKerkohetViza() { return kerkohetViza; }
+    @Override
+    public double llogaritCmiminTotal() {
+        return kerkohetViza ? cmimi + 20.0 : cmimi;
+    }
+
+    public String getShtetiDestinacion() {
+        return shtetiDestinacion;
+    }
+
+    public boolean isKerkohetViza() {
+        return kerkohetViza;
+    }
 }

@@ -3,6 +3,7 @@ import agjencia.klientet.Klienti;
 import agjencia.rezervimet.Rezervimi;
 import agjencia.transportet.Transporti;
 import agjencia.udhetimet.Udhetimi;
+import agjencia.udhetimet.UdhetimiVendor;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -15,7 +16,7 @@ public class RezervimiTest {
         Klienti k = new Klienti("K1", "Filan", "Fisteku", "filan@example.com");
         Hoteli h = new Hoteli("Hotel Grand", "Prishtine", 50.0, true);
         Transporti t = new Transporti("Autobus", "Ferizaj", "Prishtine", LocalDateTime.now().plusDays(1));
-        Udhetimi u = new Udhetimi("U1", "Prishtine", LocalDate.of(2027, 6, 10), 150.0, 3, h, t);
+        Udhetimi u = new UdhetimiVendor("U1", "Prishtine", LocalDate.of(2027, 6, 10), 150.0, 3, h, t, "Prishtine");
 
         Rezervimi r = new Rezervimi("R1", k, u, "Konfirmuar");
 
@@ -29,7 +30,7 @@ public class RezervimiTest {
     public void testMungesaklier() {
         Hoteli h = new Hoteli("Hotel Grand", "Prishtine", 50.0, true);
         Transporti t = new Transporti("Autobus", "Ferizaj", "Prishtine", LocalDateTime.now().plusDays(1));
-        Udhetimi u = new Udhetimi("U1", "Prishtine", LocalDate.of(2027, 6, 10), 150.0, 3, h, t);
+        Udhetimi u = new UdhetimiVendor("U1", "Prishtine", LocalDate.of(2027, 6, 10), 150.0, 3, h, t, "Prishtine");
 
         Exception exception = assertThrows(IllegalArgumentException.class, () ->
                 new Rezervimi("R2", null, u, "Ne pritje")
@@ -38,6 +39,3 @@ public class RezervimiTest {
         assertNotNull(exception);
     }
 }
-
-
-
