@@ -1,3 +1,5 @@
+package agjencia.puntoret;
+
 public class PuntoriShitjes extends Puntori {
 
     public PuntoriShitjes(String idPuntori, String emri, String pozita) {

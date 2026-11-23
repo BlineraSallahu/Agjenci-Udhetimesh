@@ -1,5 +1,8 @@
-import java.time.LocalDateTime;
+package agjencia.rezervimet;
 
+import java.time.LocalDateTime;
+import agjencia.klientet.Klienti;
+import agjencia.udhetimet.Udhetimi;
 public class Rezervimi {
     // Atributet e bëra 'protected' që të mund të qasen nga nënklasat
     protected String idRezervimi;

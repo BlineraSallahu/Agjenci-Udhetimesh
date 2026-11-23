@@ -1,3 +1,6 @@
+import agjencia.transportet.Aeroplani;
+import agjencia.transportet.Autobusi;
+
 import java.time.LocalDateTime;
 
 public class TransportiTest {

@@ -1,3 +1,5 @@
+package agjencia.klientet;
+
 public class Klienti {
     // Atributet private per enkapsulimin e te dhenave
     private String idKlienti;

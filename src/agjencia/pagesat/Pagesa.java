@@ -1,3 +1,7 @@
+package agjencia.pagesat;
+
+import agjencia.rezervimet.Rezervimi;
+
 import java.time.LocalDateTime;
 
 public class Pagesa {

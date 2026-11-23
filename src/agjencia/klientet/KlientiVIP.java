@@ -1,3 +1,5 @@
+package agjencia.klientet;
+
 public class KlientiVIP extends Klienti {
 
     public KlientiVIP(String idKlienti, String emri,

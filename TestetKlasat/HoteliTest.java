@@ -1,3 +1,6 @@
+import agjencia.hotelet.HotelimeYje;
+import agjencia.hotelet.ResortiAllInclusive;
+
 public class HoteliTest {
     public static void main(String[] args) {
         try {

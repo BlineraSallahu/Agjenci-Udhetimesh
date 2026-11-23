@@ -1,3 +1,5 @@
+package agjencia.hotelet;
+
 public class Hoteli {
     // Atributet e hotelit per akomodim
     private String emriHotelit;

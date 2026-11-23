@@ -1,3 +1,5 @@
+package agjencia.hotelet;
+
 public class HotelimeYje extends Hoteli {
     private int numriYjeve; // Veçori unike për këtë nënklasë
 

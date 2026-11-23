@@ -1,3 +1,8 @@
+package agjencia.rezervimet;
+
+import agjencia.klientet.Klienti;
+import agjencia.udhetimet.Udhetimi;
+
 public class RezervimiStandard extends Rezervimi {
     private boolean kaPaketeUshqimi;
 

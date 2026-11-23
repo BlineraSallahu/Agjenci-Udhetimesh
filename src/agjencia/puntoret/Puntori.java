@@ -1,3 +1,5 @@
+package agjencia.puntoret;
+
 public class Puntori {
     // Atributet private per te ruajtur te dhenat e stafit
     private String idPuntori;

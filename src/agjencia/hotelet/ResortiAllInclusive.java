@@ -1,3 +1,5 @@
+package agjencia.hotelet;
+
 public class ResortiAllInclusive extends Hoteli {
     private boolean kaPlazhPrivat; // Veçori unike për resortet
 

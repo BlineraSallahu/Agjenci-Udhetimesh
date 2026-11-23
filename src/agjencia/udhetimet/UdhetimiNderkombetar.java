@@ -1,3 +1,8 @@
+package agjencia.udhetimet;
+
+import agjencia.hotelet.Hoteli;
+import agjencia.transportet.Transporti;
+
 import java.time.LocalDate;
 
 public class UdhetimiNderkombetar extends Udhetimi {

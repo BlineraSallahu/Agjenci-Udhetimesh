@@ -1,6 +1,9 @@
+package agjencia.transportet;
+
 import java.time.LocalDateTime;
 
 public class Aeroplani extends Transporti {
+    public String llojiTransportit;
     private String kompaniaFluturimit;
 
     public Aeroplani(String nisja, String destinacioni, LocalDateTime orariNisjes, String kompaniaFluturimit) {

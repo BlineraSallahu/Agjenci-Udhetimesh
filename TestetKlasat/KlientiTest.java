@@ -1,3 +1,6 @@
+import agjencia.klientet.Klienti;
+import agjencia.klientet.KlientiStandard;
+import agjencia.klientet.KlientiVIP;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
