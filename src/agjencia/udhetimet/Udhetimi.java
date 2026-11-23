@@ -4,7 +4,7 @@ import agjencia.hotelet.Hoteli;
 import agjencia.transportet.Transporti;
 
 import java.time.LocalDate;
-
+// Klasa abstrakte qe perfaqeson nje udhetim ne agjenci
 public abstract class Udhetimi {
     protected String idUdhetimi;
     protected String destinacioni;
