@@ -12,8 +12,8 @@ public class Rezervimi {
 
     public Rezervimi(String idRezervimi, Klienti klienti, Udhetimi udhetimi, String statusi) {
         if (idRezervimi == null || idRezervimi.trim().isEmpty()) throw new IllegalArgumentException("ID nuk mund te jete e zbrazet.");
-        if (klienti == null) throw new IllegalArgumentException("Rezervimi duhet te kete nje klient.");
-        if (udhetimi == null) throw new IllegalArgumentException("Rezervimi duhet te kete nje udhetim.");
+        if (klienti == null) throw new IllegalArgumentException("agjencia.rezervimet.Rezervimi duhet te kete nje klient.");
+        if (udhetimi == null) throw new IllegalArgumentException("agjencia.rezervimet.Rezervimi duhet te kete nje udhetim.");
         if (statusi == null || statusi.trim().isEmpty()) throw new IllegalArgumentException("Statusi nuk mund te jete i zbrazet.");
 
         this.idRezervimi = idRezervimi;

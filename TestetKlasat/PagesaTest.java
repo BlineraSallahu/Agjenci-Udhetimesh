@@ -27,7 +27,7 @@ public class PagesaTest {
         Rezervimi r = new Rezervimi("R1", k, u, "I konfirmuar");
 
         assertThrows(IllegalArgumentException.class, () -> {
-            // Pagesa me vlere 0 ose negative duhet te deshtoje
+            // agjencia.pagesat.Pagesa me vlere 0 ose negative duhet te deshtoje
             new Pagesa("PAY1", r, -5.0, "E kryer");
         });
     }
