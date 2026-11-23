@@ -1,3 +1,6 @@
+import agjencia.hotelet.Hoteli;
+import agjencia.transportet.Transporti;
+import agjencia.udhetimet.Udhetimi;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;

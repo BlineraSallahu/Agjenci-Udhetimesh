@@ -1,3 +1,5 @@
+package agjencia.klientet;
+
 public class KlientiStandard extends Klienti {
 
     public KlientiStandard(String idKlienti, String emri,

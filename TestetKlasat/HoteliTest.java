@@ -1,9 +1,12 @@
+import agjencia.hotelet.HotelimeYje;
+import agjencia.hotelet.ResortiAllInclusive;
+
 public class HoteliTest {
     public static void main(String[] args) {
         try {
             // 1. Testojmë krijimin e Hotelit me Yje
             HotelimeYje hotelYje = new HotelimeYje("Swiss Diamond", "Prishtinë", 120.0, true, 5);
-            System.out.println(" Hoteli me yje u krijua me sukses!");
+            System.out.println(" agjencia.hotelet.Hoteli me yje u krijua me sukses!");
             System.out.println("Numri i yjeve: " + hotelYje.getNumriYjeve() + " ⭐");
 
             System.out.println("----------------------------------------");

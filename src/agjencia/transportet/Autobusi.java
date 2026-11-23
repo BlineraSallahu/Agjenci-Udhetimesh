@@ -1,6 +1,9 @@
+package agjencia.transportet;
+
 import java.time.LocalDateTime;
 
 public class Autobusi extends Transporti {
+    public String llojiTransportit;
     private int numriUleseve; // Emërtimi i saktë në gjuhën shqipe
 
     public Autobusi(String nisja, String destinacioni, LocalDateTime orariNisjes, int numriUleseve) {

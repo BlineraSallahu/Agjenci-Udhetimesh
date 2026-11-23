@@ -1,5 +1,8 @@
-import java.time.LocalDateTime;
+package agjencia.rezervimet;
 
+import java.time.LocalDateTime;
+import agjencia.klientet.Klienti;
+import agjencia.udhetimet.Udhetimi;
 public class Rezervimi {
     // Atributet e bëra 'protected' që të mund të qasen nga nënklasat
     protected String idRezervimi;
@@ -12,8 +15,8 @@ public class Rezervimi {
 
     public Rezervimi(String idRezervimi, Klienti klienti, Udhetimi udhetimi, String statusi) {
         if (idRezervimi == null || idRezervimi.trim().isEmpty()) throw new IllegalArgumentException("ID nuk mund te jete e zbrazet.");
-        if (klienti == null) throw new IllegalArgumentException("Rezervimi duhet te kete nje klient.");
-        if (udhetimi == null) throw new IllegalArgumentException("Rezervimi duhet te kete nje udhetim.");
+        if (klienti == null) throw new IllegalArgumentException("agjencia.rezervimet.Rezervimi duhet te kete nje klient.");
+        if (udhetimi == null) throw new IllegalArgumentException("agjencia.rezervimet.Rezervimi duhet te kete nje udhetim.");
         if (statusi == null || statusi.trim().isEmpty()) throw new IllegalArgumentException("Statusi nuk mund te jete i zbrazet.");
 
         this.idRezervimi = idRezervimi;

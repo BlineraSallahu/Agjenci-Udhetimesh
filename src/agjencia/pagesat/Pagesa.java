@@ -1,3 +1,7 @@
+package agjencia.pagesat;
+
+import agjencia.rezervimet.Rezervimi;
+
 import java.time.LocalDateTime;
 
 public class Pagesa {
@@ -13,7 +17,7 @@ public class Pagesa {
     public Pagesa(String idPagesa, Rezervimi rezervimi, double shuma, String statusiPageses) {
         // Validimi i të dhënave hyrëse
         if (idPagesa == null || idPagesa.trim().isEmpty()) throw new IllegalArgumentException("ID e pageses nuk mund te jete e zbrazet.");
-        if (rezervimi == null) throw new IllegalArgumentException("Pagesa duhet të jetë e lidhur me një rezervim.");
+        if (rezervimi == null) throw new IllegalArgumentException("agjencia.pagesat.Pagesa duhet të jetë e lidhur me një rezervim.");
 
         // Sigurohemi që shuma e paguar është vlerë pozitive
         if (shuma <= 0) throw new IllegalArgumentException("Shuma e pageses duhet te jete me e madhe se 0.");

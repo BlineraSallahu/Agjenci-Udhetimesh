@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="e2GKJT17KkAETYhRdKBZ-10" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="Klienti" vertex="1">
+        <mxCell id="e2GKJT17KkAETYhRdKBZ-10" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="agjencia.klientet.Klienti" vertex="1">
           <mxGeometry height="60" width="30" x="400" y="240" as="geometry" />
         </mxCell>
         <mxCell id="e2GKJT17KkAETYhRdKBZ-15" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="Administratori" vertex="1">

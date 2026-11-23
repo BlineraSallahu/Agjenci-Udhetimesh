@@ -1,8 +1,10 @@
+package agjencia.hotelet;
+
 public class HotelimeYje extends Hoteli {
     private int numriYjeve; // Veçori unike për këtë nënklasë
 
     public HotelimeYje(String emriHotelit, String lokacioni, double cmimiPerNate, boolean eshteIDisponueshem, int numriYjeve) {
-        // super() dërgon të 4 parametrat fiks te konstruktori i klasës Hoteli
+        // super() dërgon të 4 parametrat fiks te konstruktori i klasës agjencia.hotelet.Hoteli
         super(emriHotelit, lokacioni, cmimiPerNate, eshteIDisponueshem);
 
         // Validim që yjet të jenë brenda kufijve logjikë

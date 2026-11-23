@@ -1,3 +1,6 @@
+import agjencia.puntoret.Puntori;
+import agjencia.puntoret.PuntoriAdministrativ;
+import agjencia.puntoret.PuntoriShitjes;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
